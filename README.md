@@ -1,79 +1,45 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
-
-[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
-[travis-url]: https://travis-ci.org/nestjs/nest
-[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
-[linux-url]: https://travis-ci.org/nestjs/nest
-  
-  <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/dm/@nestjs/core.svg" alt="NPM Downloads" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://api.travis-ci.org/nestjs/nest.svg?branch=master" alt="Travis" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
-<a href="https://gitter.im/nestjs/nestjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge"><img src="https://badges.gitter.im/nestjs/nestjs.svg" alt="Gitter" /></a>
-<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
-  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
+# Snowcoop Service
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Midterm assignment backend service for login and registeration functionality
 
-## Installation
+## How to run this backend service?
 
+1. open your SQL manager UI (phpMyAdmin, MySQL Workbench, Sequel Pro)
+
+2. make a database name called snowcoop
+
+3. download the sql file or copy the query code: https://github.com/prof-kimm/snowcoop-service/blob/master/database/sql/snowcoop_2019-02-21.sql
+
+4. import it or run the copied query code into snowcoop database 
+
+5. git clone this repo by running git@github.com:prof-kimm/snowcoop-service.git
+
+6. install typescript by running 
+```bash
+$ npm install -g typescript
+```
+
+7. install ts-node by running npm install -g ts-node
+```bash
+$ npm install -g ts-node
+```
+
+8. install all the dependency packages by running
 ```bash
 $ npm install
 ```
 
-## Running the app
-
+9. start the backend service by running 
 ```bash
-# development
-$ npm run start
-
-# watch mode
 $ npm run start:dev
-
-# incremental rebuild (webpack)
-$ npm run webpack
-$ npm run start:hmr
-
-# production mode
-$ npm run start:prod
 ```
 
-## Test
 
-```bash
-# unit tests
-$ npm run test
+## How to mock api request?
+You can test the api with Insomnia application: https://insomnia.rest/
 
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](LICENSE).
+1. download insomnia client application at https://insomnia.rest/
+2. download json file at https://github.com/prof-kimm/snowcoop-service/blob/master/test/snowcooper-insomnia.json
+3. import that file into insomnia workspace
+4. run endpoint 
