@@ -1,0 +1,97 @@
+{
+  "_type": "export",
+  "__export_format": 3,
+  "__export_date": "2019-02-21T06:09:37.586Z",
+  "__export_source": "insomnia.desktop.app:v6.3.2",
+  "resources": [{
+      "_id": "wrk_dc4784b1fe5147d19918493cfee6d93f",
+      "created": 1550727176137,
+      "description": "",
+      "modified": 1550727176137,
+      "name": "snowcoop",
+      "parentId": null,
+      "_type": "workspace"
+    },
+    {
+      "_id": "env_2f63303c9c4d4daa971e302092cae262",
+      "color": null,
+      "created": 1550727176367,
+      "data": {},
+      "isPrivate": false,
+      "metaSortKey": 1550727176367,
+      "modified": 1550727176367,
+      "name": "New Environment",
+      "parentId": "wrk_dc4784b1fe5147d19918493cfee6d93f",
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_20308887576c498a9245965cb02a9088",
+      "cookies": [],
+      "created": 1550727176373,
+      "modified": 1550727176373,
+      "name": "Default Jar",
+      "parentId": "wrk_dc4784b1fe5147d19918493cfee6d93f",
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "req_b0079bc3bddc4a669b95bd8ee7bf8dc6",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"some@test.com\",\n\t\"password\": \"12345678\"\n}"
+      },
+      "created": 1550727183724,
+      "description": "",
+      "headers": [{
+        "id": "pair_5063f596c0004a3893cd5c33c1f3f8c5",
+        "name": "Content-Type",
+        "value": "application/json"
+      }],
+      "isPrivate": false,
+      "metaSortKey": -1550727183724,
+      "method": "POST",
+      "modified": 1550728057027,
+      "name": "login",
+      "parameters": [],
+      "parentId": "wrk_dc4784b1fe5147d19918493cfee6d93f",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/auth/login",
+      "_type": "request"
+    },
+    {
+      "_id": "req_9847c911f9074548b74e7fe682889d14",
+      "authentication": {},
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"some@test.com\",\n\t\"firstName\": \"John\",\n\t\"lastName\": \"Doe\",\n\t\"password\": \"12345678\"\n}"
+      },
+      "created": 1550727225170,
+      "description": "",
+      "headers": [{
+        "id": "pair_9620b21993074095ad3d91bbd26b55b1",
+        "name": "Content-Type",
+        "value": "application/json"
+      }],
+      "isPrivate": false,
+      "metaSortKey": -1550727225170,
+      "method": "POST",
+      "modified": 1550728042647,
+      "name": "register",
+      "parameters": [],
+      "parentId": "wrk_dc4784b1fe5147d19918493cfee6d93f",
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingMaxTimelineDataSize": 1000,
+      "settingRebuildPath": true,
+      "settingSendCookies": true,
+      "settingStoreCookies": true,
+      "url": "http://localhost:3000/auth/register",
+      "_type": "request"
+    }
+  ]
+}
