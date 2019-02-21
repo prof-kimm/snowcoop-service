@@ -5,6 +5,8 @@
   "author": "prof-kimm",
   "license": "MIT",
   "scripts": {
+    "migrate:generate": "ts-node ./node_modules/.bin/typeorm migration:generate -n GenerateMigrations",
+    "migrate:run": "ts-node ./node_modules/.bin/typeorm migration:run",
     "format": "prettier --write \"src/**/*.ts\"",
     "start": "ts-node -r tsconfig-paths/register src/main.ts",
     "start:dev": "nodemon",
@@ -22,8 +24,17 @@
   "dependencies": {
     "@nestjs/common": "^5.1.0",
     "@nestjs/core": "^5.1.0",
+    "@nestjs/passport": "^5.1.0",
+    "@nestjs/typeorm": "^5.3.0",
+    "class-transformer": "^0.2.0",
+    "class-validator": "^0.9.1",
+    "jsonwebtoken": "^8.5.0",
+    "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2",
+    "typeorm": "^0.2.13",
     "typescript": "^3.0.1"
   },
   "devDependencies": {
