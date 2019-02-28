@@ -15,14 +15,14 @@ export class AuthController {
   @Post('login')
   async login(
     @Body() loginUserDto: LoginUserDto,
-  ): Promise<JwtPayload> {
+  ): Promise<any> {
     return await this.authService.processLogin(loginUserDto);
   }
 
   @Post('register')
   async register(
     @Body() createUserDto: CreateUserDto,
-  ): Promise<JwtPayload> {
+  ): Promise<any> {
     const user = await this.userService.create(createUserDto);
     const { id, email, firstName } = user;
     return await this.authService.createToken({ id, email, firstName } as UserPayload);
