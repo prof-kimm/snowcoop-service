@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.7.19)
 # Database: snowcoop
-# Generation Time: 2019-02-21 05:51:23 +0000
+# Generation Time: 2019-02-28 15:54:20 +0000
 # ************************************************************
 
 
@@ -37,7 +37,7 @@ LOCK TABLES `migrations` WRITE;
 
 INSERT INTO `migrations` (`id`, `timestamp`, `name`)
 VALUES
-	(1,1550727074828,'GenerateMigrations1550727074828');
+	(1,1551369238486,'GenerateMigrations1551369238486');
 
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -50,25 +50,16 @@ DROP TABLE IF EXISTS `user`;
 
 CREATE TABLE `user` (
   `id` varchar(36) NOT NULL,
-  `email` varchar(500) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `firstName` varchar(500) NOT NULL,
-  `lastName` varchar(500) NOT NULL,
+  `firstName` varchar(255) NOT NULL,
+  `lastName` varchar(255) NOT NULL,
   `createdAt` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
   `updatedAt` datetime(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6),
   PRIMARY KEY (`id`),
   UNIQUE KEY `IDX_e12875dfb3b1d92d7d7c5377e2` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-
-INSERT INTO `user` (`id`, `email`, `password`, `firstName`, `lastName`, `createdAt`, `updatedAt`)
-VALUES
-	('b3976f33-079b-4c4a-aed7-dc968a2e8d6c','some@test.com','40c47753e9bf9476','John','Doe','2019-02-21 00:47:23.537020','2019-02-21 00:47:23.537020');
-
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
-UNLOCK TABLES;
 
 
 
