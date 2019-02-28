@@ -13,16 +13,16 @@ export class User {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({ length: 500, unique: true })
+  @Column({ length: 255, unique: true })
   email: string;
 
   @Column({ nullable: true })
   password: string;
 
-  @Column({ length: 500 })
+  @Column({ length: 255 })
   firstName: string;
 
-  @Column({ length: 500 })
+  @Column({ length: 255 })
   lastName: string;
 
   @CreateDateColumn()

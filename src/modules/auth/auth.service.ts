@@ -2,7 +2,6 @@ import * as jwt from 'jsonwebtoken';
 import {
   Injectable,
   Inject,
-  NotFoundException,
   UnauthorizedException,
 } from '@nestjs/common';
 import { UserService } from '../user/user.service';
@@ -37,7 +36,7 @@ export class AuthService {
       { expiresIn },
     );
     return {
-      expires_in: expiresIn,
+      user: payload,
       access_token: token,
     };
   }
