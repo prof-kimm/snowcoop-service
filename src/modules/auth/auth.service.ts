@@ -37,8 +37,8 @@ export class AuthService {
       { expiresIn },
     );
     return {
-      expires_in: expiresIn,
-      access_token: token,
+      user: payload,
+      token,
     };
   }
 
