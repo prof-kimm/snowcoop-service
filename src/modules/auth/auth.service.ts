@@ -37,7 +37,11 @@ export class AuthService {
     );
     return {
       user: payload,
+<<<<<<< HEAD
       access_token: token,
+=======
+      token,
+>>>>>>> 1aed94a58a8ca9a611d2b9c55597247b81a64cc8
     };
   }
 
