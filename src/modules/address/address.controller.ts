@@ -37,7 +37,7 @@ export class AddressController {
       },
       {
         id: 4,
-        address: '84 Starwood Rd',
+        street: '84 Starwood Rd',
         city: 'Nepean',
         province: 'ON',
         postalCode: 'K2G 1Z5',
@@ -46,7 +46,7 @@ export class AddressController {
       },
       {
         id: 5,
-        address: '76 B Starwood Rd',
+        street: '76 B Starwood Rd',
         city: 'Nepean',
         province: 'ON',
         postalCode: 'K2G 1Z5',
