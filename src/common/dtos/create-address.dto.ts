@@ -18,10 +18,10 @@ export class CreateAddressDto {
   readonly postalCode: string;
 
   @IsNotEmpty()
-  @IsNumber()
-  readonly lat: number;
+  @IsString()
+  readonly lat: string;
 
   @IsNotEmpty()
-  @IsNumber()
-  readonly lng: number;
+  @IsString()
+  readonly lng: string;
 }
